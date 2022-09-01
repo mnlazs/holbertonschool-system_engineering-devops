@@ -1,1 +1,6 @@
-# holbertonschool-system_engineering-devops
+practicando ando 
+
+.
+.
+.
+

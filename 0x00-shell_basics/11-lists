@@ -1,5 +1,4 @@
-#!/bin/bash
-ls -la ..
+ls -la .
 drwxr-xr-x    1 root root  218 Sep  1 11:39 .                                                                                  
 drwxr-xr-x    1 root root  218 Sep  1 11:39 ..                                                                                 
 lrwxrwxrwx    1 root root    7 Mar 16 10:07 bin -> usr/bin                                                                     

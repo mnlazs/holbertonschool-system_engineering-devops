@@ -1,0 +1,2 @@
+#!/bin/bash
+-n1 'ls -Art  | tail -n 1'

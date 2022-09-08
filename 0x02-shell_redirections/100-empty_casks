@@ -1,2 +1,2 @@
 #!/bin/bash
-find /root/1 -type f -iname ".*" -ls
+find 1 -type f -iname ".*" -ls

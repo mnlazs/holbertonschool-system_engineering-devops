@@ -1,2 +1,2 @@
 #!/bin/bash
-find 1 -type f -iname ".*" -ls
+f -empty -print | ls -aR

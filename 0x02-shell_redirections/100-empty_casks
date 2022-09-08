@@ -1,2 +1,2 @@
 #!/bin/bash
-f -empty -print | ls -aR
+f -empty -print

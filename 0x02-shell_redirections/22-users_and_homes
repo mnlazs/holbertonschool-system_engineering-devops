@@ -1,2 +1,6 @@
 #!/bin/bash
+<<<<<<< HEAD
 cat -d : f 1,6 /etc/passwd/sort
+=======
+awk -F: ' $3 <= 100 {print $1, $6}' /etc/passwd
+>>>>>>> 931e409b20d671c893986d367b6c09db0799fd17

@@ -1,2 +1,2 @@
 #!/bin/bash
-sort -d | find /etc/passwd /home/* -type -d | uniq | less
+awk -F: ' $3 <= 100 {print $1, $6}' /etc/passwd

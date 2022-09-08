@@ -1,2 +1,2 @@
 #!/bin/bash
-fin . -type  d -print -empty | ls-la
+find /root/1 -type f -iname ".*" -ls

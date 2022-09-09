@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $ ((127+1))
+echo $TRUEKNOWLEDGE=1 ((127+$))

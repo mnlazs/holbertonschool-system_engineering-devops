@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%0.2f\n" $T
+echo $T | bc -l | xargs printf "%.2f"

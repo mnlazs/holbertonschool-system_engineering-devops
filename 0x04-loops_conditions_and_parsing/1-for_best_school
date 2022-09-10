@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-for i in {1..10}; do "Best School"; done
+printf 'Best School\n%.0s' {1..10}

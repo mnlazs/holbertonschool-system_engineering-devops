@@ -1,4 +1,2 @@
 #!/bin/bash
-if (binary.charAt(binary.length()-i-1) == '0'){
-           ten += 0;
-}
+echo $(( 2#$BINARY ))

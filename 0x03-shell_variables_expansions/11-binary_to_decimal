@@ -1,2 +1,4 @@
 #!/bin/bash
-echo ibase=2 obase=10
+if (binary.charAt(binary.length()-i-1) == '0'){
+           ten += 0;
+}

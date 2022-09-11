@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-while _ in {1..10} 
+x=1
+while [ $x -le 10 ]
 do
-echo "Best School"; 
+  echo "Best School $x times"
+  x=$(( $x + 1 ))
 done

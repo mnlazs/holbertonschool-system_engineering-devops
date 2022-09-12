@@ -3,11 +3,11 @@
 i=1 
 while [ $i -le 10 ];
 do 
-    if [ $i = 4 ]; 
+    if [ $i -eq 4 ]; 
     then
 	echo "bad luck"
 	i=$(( i + 1 ))
-elif [ $i = 8 ];
+elif [ $i -eq 8 ];
     then
 	echo "good luck"
 	i=$(( i + 1 ))

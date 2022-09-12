@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #using the "until" command to print "Best School" 10 times
 i="Best School"
-until [ "$i" -gt 9 ]
+until [ "$i" == 10 ]
 do
     echo "$i"
     ((i++))

@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
-#using commands "WHILE" repeated 10 times "Best School"
-x=0
-while (( x < 9 ));
-do
-    echo "Best School";
-    (( i++ ));
-if (( x = 10 ));
-    echo "Hi";
+#using commands "WHILE" repeated 9 times and using a conditional 'if' for the last line
+
+i=1
+while ["$i" -le 10]
+	echo "Best School";
+if ["$i" -eq 9] 
+	echo "Hi"
+
+fi
+(( i++ ))
+done

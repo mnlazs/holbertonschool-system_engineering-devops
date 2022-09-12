@@ -5,14 +5,14 @@ while [ $i -le 10 ];
 do 
     if [ $i = 4 ]; 
     then
-	echo "bad Luck"
-	i= $ ((i+1))
+	echo "bad luck"
+	i= $ ((i++))
 elif [ $1 = 8 ];
     then
-	echo "good Luck"
-	i= $ ((i+1))
+	echo "good luck"
+	i= $ ((i++))
 else
 	echo "Best School"
-	i= $ ((i+1))
+	i= $ ((i++))
 fi 
 done

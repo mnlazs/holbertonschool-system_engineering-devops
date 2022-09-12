@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#using commands "WHILE" repeated 10 times "Best School"
+x=0
+while (( x < 9 ));
+do
+    echo "Best School";
+    (( i++ ));
+if (( x = 10 ));
+    echo "Hi";
+done

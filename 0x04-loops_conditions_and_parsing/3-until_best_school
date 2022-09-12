@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+i="Best School"
+until [ $i -gt 10 ]
+do
+    echo $i
+    ((i++))
+done
+

@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#Working w/ conditionals 'if' 'else' 'elif'
 i=1 
 while [ "$i" -le 10 ]
 	echo "Best School"
@@ -10,4 +11,3 @@ while [ "$i" -le 10 ]
 	  then
 		 echo "Best School"
 done
-

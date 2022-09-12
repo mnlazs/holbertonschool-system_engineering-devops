@@ -7,4 +7,3 @@ do
     (( i++ ));
 if (( x = 10 ));
     echo "Hi";
-done

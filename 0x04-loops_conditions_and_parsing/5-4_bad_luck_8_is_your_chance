@@ -9,7 +9,5 @@ while [ "$i" -le 10 ]
           elif [ "$i" > 8 ]
 	  then
 		 echo "Best School"
-fi 
-((i++))
 done
 

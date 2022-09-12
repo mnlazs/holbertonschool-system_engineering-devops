@@ -6,13 +6,13 @@ do
     if [ $i = 4 ]; 
     then
 	echo "bad luck"
-	i= $ ((i++))
+	i= $((i++))
 elif [ $1 = 8 ];
     then
 	echo "good luck"
-	i= $ ((i++))
+	i= $((i++))
 else
 	echo "Best School"
-	i= $ ((i++))
+	i= $((i++))
 fi 
 done

@@ -2,11 +2,11 @@
 #working on gave info about the file, regular file, exists and if empty or no
 
 file="School"
-if [ $File -e ];
+if [ -e "$file" ];
 then 
 	echo "$file school file exists"
 
-	if [ $file -s ];
+	if [ -s  "$file" ];
 then 
 	echo "$file school file is not empty"
 else 	
@@ -14,7 +14,7 @@ else
 
 fi
 
-if [ $file -f ]	
+if [ -f "$file" ]	
 then 
 	echo "$file school a regular file"
 fi

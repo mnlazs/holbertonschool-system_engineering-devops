@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#using commands "WHILE" repeated 10 times "Best School"
+i=0
+while (( i < 10 ));
+do
+    echo "Best School";
+    (( i++ ));
+done

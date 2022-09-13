@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#Display the hour, 12 hours standar
+
+i=0
+while [ "$i" -le 12 ]
+do
+    echo "Hour: $i"
+    (( i++ ))
+
+    x=1
+    while [ "$x" -le 59 ]
+    do
+	echo "$x"
+	(( x++ ))
+    done
+done

@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 #Writing a Bash script that displays its own PID.
 
-ls /proc | less
+find /proc | less
+

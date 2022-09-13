@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 #Display the hour, 12 hours standar
-#!/usr/bin/env bash
 
 i=0
 while [ "$i" -le 12 ]

@@ -2,4 +2,4 @@
 #Writing a Bash script that displays the PID, along with the process name, of processes whose name contain the word bash.
 
 
-ps -efo pid --sort=-%name "bash"
+ps aux -f pid --sort=-%name "bash"

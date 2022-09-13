@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-#Writing a Bash script that displays a list of currently running processes.
+#Writing a Bash script that displays a list of currently running processes | less
 
-pstree /proc | less
+ps -aux | less

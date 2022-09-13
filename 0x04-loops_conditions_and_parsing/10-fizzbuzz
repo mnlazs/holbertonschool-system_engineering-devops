@@ -8,7 +8,7 @@ do
 	elif (( i % 3 == 0 )); then
 		echo "Fizz"
 
-	elif (( i % 5 == 0 )) then
+	elif (( i % 5 == 0 )); then
 		echo "Buzz"
 	else
 		echo "$1"

@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#working on gave info about the file, regular file, exists and if empty or no
 
 file="School"
 if [ $File -e ];

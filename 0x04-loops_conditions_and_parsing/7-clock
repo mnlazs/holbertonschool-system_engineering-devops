@@ -1,7 +1,17 @@
 #!/usr/bin/env bash
-#En el siguiente script, obtenemos la hora actual en formato de 12 horas y la hacemos eco en la consola estandarizado
-date
-date +"%FORMAT"
-var=$(date)
-var=`date`
-echo "$var
+#Display the hour, 12 hours standar
+#!/usr/bin/env bash
+
+i=0
+while [ "$i" -le 12 ]
+do
+    echo "Hour: $h"
+    (( i++ ))
+
+    x=1
+    while [ "$x" -le 59 ]
+    do
+	echo "$x"
+	(( x++ ))
+    done
+done

@@ -1,11 +1,8 @@
 #!/usr/bin/env bash
 #En el siguiente script, obtenemos la hora actual en formato de 12 horas y la hacemos eco en la consola estandarizado
-
-while [[ $# -gt 0 ]]
+i=1
+while [[ "$1" -gt 0 ]]
   do
-  key="$1"
-
-
   case $key in
   --AMPM| --ampm)
   while true;

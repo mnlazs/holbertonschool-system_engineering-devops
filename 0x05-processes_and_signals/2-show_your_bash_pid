@@ -2,4 +2,4 @@
 #writing a Bash script that displays lines containing the bash word, thus allowing you to easily get the PID of your Bash proces.
 # shellcheck disable=SC2009
 
-ps auxf --sort=-%name "bash"
+ps auxf --sort=-%name bash

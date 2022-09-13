@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 #working on gave info about the file, regular file, exists and if empty or no
 
-file="School"
+file="school"
+
 if [ -e "$file" ];
 then 
 	echo "$file school file exists"

@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #Deleting the Process
 
-pkill -sigkill -f "7-highlander"
+echo "7-highlande

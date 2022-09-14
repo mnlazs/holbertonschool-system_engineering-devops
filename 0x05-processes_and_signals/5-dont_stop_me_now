@@ -1,12 +1,9 @@
 #!/usr/bin/env bash
 #Writing a script that stops 4-to_infinity_and_beyond process.
 
-while true
+while :
 do
     echo "To infinity and beyond"
     sleep 2
-if (kill)
-then
-        break
-fi
+    kill "$ (pgred -f 4-to_infinity_and_beyond)"
 done

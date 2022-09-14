@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+echo "7-highlander"
+read procname
+kill $(ps aux | grep $procname | grep -v grep | awk '{print $2}' )

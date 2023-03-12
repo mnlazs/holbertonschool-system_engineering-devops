@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Clave privada debe ser "school" y la frase "betty"
+ssh-keygen -t rsa -b 4096 -f school -N betty

@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-descripcion 
+descripcion
 """
 
 

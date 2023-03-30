@@ -1,32 +1,33 @@
 #!/usr/bin/python3
-"""return all the user description
 """
-import sys
-import requests
+descripcion 
+"""
 
-# Get employee ID from command-line argument
-employee_id = int(sys.argv[1])
 
-# Send GET request to API to get employee's todo list
-response = requests.get(f'https://jsonplaceholder.typicode.com/users/{employee_id}/todos')
+if __name__ == "__main__":
 
-# Raise an exception if API response is not successful
-response.raise_for_status()
+    import requests
+    from sys import argv
+    if len(argv) < 2:
+        exit()
+    todos = requests.get(
+        "https://jsonplaceholder.typicode.com/todos?userId={}&completed=true"
+        .format(argv[1]))
+    name = requests.get(
+        "https://jsonplaceholder.typicode.com/users?id={}"
+        .format(argv[1]))
+    name = name.json()
+    name = name[0]["name"]
+    todo = requests.get(
+        "https://jsonplaceholder.typicode.com/todos?userId={}".format(argv[1]))
+    todo = todo.json()
+    todo = len(todo)
+    todos = todos.json()
+    todo_list = []
 
-# Get todo list from API response
-todos = response.json()
-
-# Calculate number of completed tasks and total number of tasks
-num_completed_tasks = sum(1 for todo in todos if todo['completed'])
-total_tasks = len(todos)
-
-# Get employee name from API response
-response = requests.get(f'https://jsonplaceholder.typicode.com/users/{employee_id}')
-response.raise_for_status()
-employee_name = response.json()['name']
-
-# Display progress information
-print(f'Employee {employee_name} is done with {num_completed_tasks}/{total_tasks} tasks:')
-for todo in todos:
-    if todo['completed']:
-        print(f'\t{todo["title"]}')
+    for x in todos:
+        todo_list.append("\t {}".format(x["title"]))
+    print("Employee {} is done with tasks({}/{}):"
+          .format(name, len(todos), todo))
+    for y in todo_list:
+        print(y)

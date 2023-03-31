@@ -12,21 +12,16 @@ if __name__ == "__main__":
         exit()
 
     # Get the employee name
-    user_id = argv[1]
-    name = requests.get("https://jsonplaceholder.typicode.com/users?id={}".format(user_id)).json()[0]["username"]
-    
-    # Get the list of todos
-    todos = requests.get("https://jsonplaceholder.typicode.com/todos?userId={}".format(user_id)).json()
-    
-    # Create a list to store todo items
-    todo_list = []
-
-    # Append the todo item to the list
-    for todo in todos:
-        todo_list.append([user_id, name, todo["completed"], todo["title"]])
-
-    # Write the list of todo items to a CSV file
-    with open("{}.csv".format(user_id), "w", newline="") as csv_file:
-        writer = csv.writer(csv_file)
-        writer.writerow(["USER_ID", "USERNAME", "TASK_COMPLETED_STATUS", "TASK_TITLE"])
-        writer.writerows(todo_list)
+todos = requests.get(
+        "https://jsonplaceholder.typicode.com/todos?userId={}"
+        .format(argv[1]))
+name = requests.get(
+        "https://jsonplaceholder.typicode.com/users?id={}".format(argv[1]))
+name = name.json()
+name = name[0]["username"]
+todos = todos.json()
+file_name = "{}.csv".format(argv[1])
+with open(file_name, 'w') as csv_file:
+        writer = csv.writer(csv_file, delimiter=',', quoting=csv.QUOTE_ALL)
+        for todo in todos:
+            writer.writerow([argv[1], name, todo['completed'], todo['title']])
